@@ -35,7 +35,10 @@ class CallbackService
      */
     public function isSendPossible($phone)
     {
-        $isSendPossible = $this->upClient->getSendPossibility($phone);
+        $isSendPossible['result'] = false;
+        if ($phone) {
+            $isSendPossible = $this->upClient->getSendPossibility($phone);
+        }
 
         return $isSendPossible['result'];
     }
@@ -46,7 +49,10 @@ class CallbackService
      */
     public function getFailedCallbacks($phone)
     {
-        $failedCallbacks = $this->upClient->getFailedCallbacks($phone);
+        $failedCallbacks['result'] = [];
+        if ($phone) {
+            $failedCallbacks = $this->upClient->getFailedCallbacks($phone);
+        }
 
         return json_encode($failedCallbacks['result']);
     }
