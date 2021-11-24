@@ -48,6 +48,6 @@ class CallbackService
     {
         $failedCallbacks = $this->upClient->getFailedCallbacks($phone);
 
-        return $failedCallbacks['result'];
+        return json_encode($failedCallbacks['result']);
     }
 }
