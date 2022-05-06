@@ -1,9 +1,16 @@
-# Twilio callback plugin
+Twilio callback plugin
+==============
 
-Плагин для маутика https://github.com/playtini/mautic_base. Предназначен для обработки колбэков провайдера и блока номера по соответствующей логике https://playtini.atlassian.net/browse/VSTK-634. Признак болка номера берется из смс гейта `/send-possibility/:phone/`
+Mautic plugin https://github.com/playtini/mautic_base. Designed to process provider callbacks and number block according to the appropriate logic https://playtini.atlassian.net/browse/VSTK-634. The sign of the number key is taken from the SMS gate `/send-possibility/:phone/`
 
-[Структура плагинов и установка](https://developer.mautic.org/#plugins)
+Run
+---
+[Mautic plugin's installation](https://developer.mautic.org/#plugins)
 
-Дополнительных енвов не требуется
 
-# Данный плагин не используется, логика перенесена в админку!
+No additional envs required
+
+Usage
+-----
+
+# This plugin is not used, the logic has been moved to the admin panel!
