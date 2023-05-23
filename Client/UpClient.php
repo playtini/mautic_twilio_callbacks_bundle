@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class UpClient
 {
-    const CLIENT_URL = 'https://sms-api-gateway.n0d.dev';
+    const CLIENT_URL = 'https://sms-gateway.p777.org';
 
     /**
      * @var Client
